@@ -1,0 +1,219 @@
+/*
+	Pansy Potter Website
+	Assignment-2_Unit-6
+	Style Sheet 1 (Dark Mode)
+	Developed by Millie Sandbrook
+	Version 1.0 01/11/21
+	
+*/
+
+
+
+
+body {
+	background-color: #222222;
+	color: white;
+}
+
+a {
+	text-decoration: underline;
+	color: white;
+}
+
+button {
+	background-color: black;
+	color: white;
+}
+
+p {
+	background-color: #4a732e;
+	border-radius: 15px;
+	margin: 15px;
+	padding: 10px;
+	font-size: 1em;
+	color: white;
+}
+	
+
+h2, h4, a, table, form, option, select, button, h1, h3 {
+	font-family: "Lucida Handwriting", Cursive;
+}
+
+p {
+	font-family: Palatino, "Palatino Linotype";
+}
+
+div#nav {
+transform: translateY(-17px);}
+
+#nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #385723;
+	line-height: normal;
+	box-shadow: #385723 2px 4px 5px;
+	
+}
+
+#nav li {
+	float: right;
+
+}
+
+#nav li a {
+	display: inline-block;
+	color: #FFFFFF;
+	text-align: right;
+	padding: 38.5px 30px;
+	font-size: 17px;
+	text-decoration: none;
+	margin-top: 0;
+}
+	
+#nav li a:hover {
+	background-color: #2F4A1D;
+}
+
+
+#title a img {
+  float: left;
+  margin: 0;
+  padding: 0;
+  box-shadow: #385723 2px 4px 5px;
+}
+
+#title:hover {
+  background: #333333;
+}
+	
+.column {
+  float: left;
+  width: 22%;
+  margin: 15px;
+  margin-top: 50% !important;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+div#homepage .row .column .card img{
+	margin-left: -5px;
+	border: solid white;
+	border-radius: 7px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 150%;
+    display: block;
+    margin: 12px;
+	transition: 1s;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+	div#homepage .row .column .card img{
+		width: 75%;
+		padding: 8px;
+		padding: 0;
+	}
+	
+	div#homepage .row .column .card {
+		margin: 0;
+	}
+	
+	.column{
+		margin: 12px;
+	}
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #385723;
+  transition: 1s;
+  margin: 0;
+  border-radius: 7px;
+  
+}
+
+.card:hover{
+transform: translateY(-10px);}
+
+div#homepage {
+	background-image: url("../images/Picture11.png");
+	height: 100%;
+	background-repeat: no-repeat;
+	transform: translateY(-17px)
+}
+
+table, th, td {
+	border-collapse: collapse;
+}
+
+th {
+	background-color: #94511D;
+	color: #FFFFFF;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+}
+
+tr:nth-child(even) {
+	background-color: #F2F2F2;		
+}
+
+label, input[type=text], select {
+	padding: 10px;
+	width: 100%;
+}
+
+input[type=text], select {
+	width: 100%;
+	padding: 10px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 2px solid #3B8019;
+	border-radius: 4px;
+}
+
+input[type=text]:focus, select:focus {
+	background-color: #D3D3D3;
+	outline: none !important;
+}
+
+input[type=submit] {
+	background-color: #385723;
+	border: none;
+	color: #FFFFFF;
+	padding: 10px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+#greybox {
+	background-color: #ECECEC;
+	padding: 30px;
+	border-radius: 5px;
+	color: black;
+	margin: 30px;
+}
+
+#footer {
+	display: block;
+	margin: 0;
+	padding: 0;
+	background-color: #385723;
+}
